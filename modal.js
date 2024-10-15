@@ -4,6 +4,7 @@ const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
 const captionText = document.getElementById("caption");
 const closeBtn = document.querySelector(".close");
+modal.style.display = "none";
 
 // Adiciona evento para abrir o modal ao clicar na imagem
 const images = document.querySelectorAll(".image-grid img");
