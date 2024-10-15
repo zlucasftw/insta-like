@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F6FF;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dbdbdb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.navbar .logo {
+    font-family: 'Instagram', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #45474B;
+}
+
+/* Links de Navegação */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Botão de Entrar */
+.login-btn {
+    background-color: #0095f6;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #007bbd;
+}
+
+/* Link de Cadastro */
+.signup-link {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.signup-link:hover {
+    color: #005f86;
+}
+
+.profile-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 2rem;
+    background-color: #F4F6FF;
+    border: 1px solid #010304;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #C4DAD2;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 3px solid #45474B;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    color: #45474B;
+}
+
+.profile-info p {
+    font-size: 16px;
+    color: #45474B;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
