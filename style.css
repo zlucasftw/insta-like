@@ -280,7 +280,7 @@ body {
     }
 
     .profile-info p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         color: var(--color-dark-gray);
         font-weight: 500;
     }
