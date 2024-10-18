@@ -13,7 +13,7 @@ images.forEach(img => {
         const article = this.closest("article");
         const description = article ? article.dataset.description : '';
         const caption = description || this.alt;
-        captionText.innerHTML = `<p>${caption}</p>`; 
+        captionText.innerHTML = `<p>${caption}</p>`;
     });
 });
 

@@ -44,14 +44,14 @@ body {
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color:  #000000;
+    color: #000000;
     font-style: italic;
     font-weight: 500;
 }
 
-.navbar .logo  strong{
+.navbar .logo strong {
     font-weight: 700;
-    color:  var(--color-blue);
+    color: var(--color-blue);
 }
 
 .nav-links {
@@ -62,8 +62,10 @@ body {
 
 /* Botão de Login */
 .login-btn {
-    background-color: #000000; /* Preto */
-    color: #FFFFFF;  /* Branco */
+    background-color: #000000;
+    /* Preto */
+    color: #FFFFFF;
+    /* Branco */
     border: none;
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius-small);
@@ -73,12 +75,12 @@ body {
 
 .login-btn:hover {
     background-color: var(--color-dark-gray);
-    color: var(--color-white); 
+    color: var(--color-white);
 }
 
 /* Link de Cadastro */
 .signup-link {
-    color: var(--color-dark-gray); 
+    color: var(--color-dark-gray);
     text-decoration: none;
     font-weight: bold;
     transition: color var(--transition-fast);
