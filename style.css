@@ -44,7 +44,7 @@ body {
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--color-dark-gray);
+    color:  #000000;
 }
 
 .nav-links {
@@ -55,8 +55,8 @@ body {
 
 /* Botão de Login */
 .login-btn {
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    background-color: #000000; /* Preto */
+    color: #FFFFFF;  /* Branco */
     border: none;
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius-small);
@@ -66,18 +66,19 @@ body {
 
 .login-btn:hover {
     background-color: var(--color-dark-gray);
+    color: var(--color-white); 
 }
 
 /* Link de Cadastro */
 .signup-link {
-    color: var(--color-blue);
+    color: var(--color-dark-gray); 
     text-decoration: none;
     font-weight: bold;
     transition: color var(--transition-fast);
 }
 
 .signup-link:hover {
-    color: var(--color-dark-gray);
+    color: var(--color-blue);
 }
 
 /* Profile */
@@ -108,11 +109,13 @@ body {
     font-size: 1.5rem;
     color: var(--color-dark-gray);
     margin-bottom: 0.5rem;
+    font-weight: 600;
 }
 
 .profile-info p {
     font-size: 1rem;
     color: var(--color-dark-gray);
+    font-weight: 500;
 }
 
 /* Grid de Imagens */
@@ -170,6 +173,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
     line-height: 1.5;
+    font-weight: 500;
 }
 
 .close {
@@ -196,7 +200,7 @@ body {
 
     .nav-links {
         gap: 0.9rem;
-        font-size: 0.6rem;
+        font-size: 0.75rem;
     }
 
     .profile-pic {
@@ -210,7 +214,7 @@ body {
     }
 
     .profile-info p {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
 
     .image-grid {
@@ -273,5 +277,11 @@ body {
 
     .image-grid img:hover {
         transform: scale(1.05);
+    }
+
+    .profile-info p {
+        font-size: 0.8rem;
+        color: var(--color-dark-gray);
+        font-weight: 500;
     }
 }
