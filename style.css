@@ -189,9 +189,6 @@ body {
 
 /* Responsividade */
 @media (max-width: 480px) {
-    .profile-container {
-        padding: 1.2rem;
-    }
 
     .navbar .logo {
         font-size: 0.8rem;
@@ -247,12 +244,12 @@ body {
 @media (min-width: 481px) and (max-width: 868px) {
     .image-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 0.7rem;
+        margin-left: 1rem;
     }
 
     .image-grid img {
-        width: 11rem;
-        height: 11rem;
+        width: 15rem;
+        height: 14rem;
     }
 
     .modal-content {
