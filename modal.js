@@ -10,11 +10,17 @@ modal.style.display = "none";
 const images = document.querySelectorAll(".image-grid img");
 images.forEach(img => {
     img.addEventListener("click", function () {
-        captionText.textContent = ""
+        captionText.textContent = "";
         modal.style.display = "block";
         modalImg.src = this.src;
-        // captionText.textContent = this.alt;
-        captionText.innerHTML += `<p>${this.dataset.description}</p>`; // Adiciona a descrição
+
+        // Acesse o elemento pai <article> e obtenha o data-description
+        const article = this.closest("article");
+        const description = article ? article.dataset.description : '';
+
+        // Verifica se a descrição está vazia e usa o alt da imagem se necessário
+        const caption = description || this.alt;
+        captionText.innerHTML = `<p>${caption}</p>`; // Adiciona a descrição ou alt
     });
 });
 
