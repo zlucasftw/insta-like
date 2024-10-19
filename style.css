@@ -34,7 +34,7 @@ body {
     align-items: center;
     background-color: var(--color-white);
     width: 100%;
-    padding: 0.5rem 1.2rem;
+    padding: 0.6rem 1.2rem;
     border-bottom: 0.0625rem solid rgba(69, 71, 75, 0.2);
     position: fixed;
     top: 0;
@@ -42,11 +42,12 @@ body {
 }
 
 .navbar .logo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #000000;
     font-style: italic;
     font-weight: 500;
+    margin-left: 1rem;
 }
 
 .navbar .logo strong {
@@ -58,14 +59,13 @@ body {
     display: flex;
     align-items: center;
     gap: 0.9375rem;
+    margin-right: 1rem;
 }
 
 /* Botão de Login */
 .login-btn {
     background-color: #000000;
-    /* Preto */
     color: #FFFFFF;
-    /* Branco */
     border: none;
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius-small);
@@ -139,12 +139,11 @@ body {
     width: 100%;
     height: 16rem;
     object-fit: cover;
-    border-radius: var(--border-radius-medium);
     transition: transform var(--transition-fast) ease, filter var(--transition-fast) ease;
 }
 
 .image-grid img:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     filter: brightness(0.85);
 }
 

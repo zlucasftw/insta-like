@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viagem Dev</title>
-    <link rel="icon" type="image/x-icon" href="assets/airplane.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/airplane.ico">
+    <meta name="description" content="Explore o mundo com Viagem Dev! Veja fotos inspiradoras e histórias de viagens incríveis.">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header class="navbar">
-        <div class="logo">Viagem <strong>Dev</strong></div>
-        <div class="nav-links">
-            <button class="login-btn">Entrar</button>
-            <a href="#" class="signup-link">Cadastre-se</a>
-        </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Viagem <strong>Dev</strong></div>
+            <div class="nav-links">
+                <button class="login-btn" aria-label="Entrar">Entrar</button>
+                <a href="#" class="signup-link" aria-label="Cadastre-se">Cadastre-se</a>
+            </div>
+        </nav>
     </header>
 
     <main class="profile-container">
         <section class="profile-header">
-            <img src="photos/gui.jpeg" alt="Profile Picture" class="profile-pic">
+            <img src="photos/gui.jpeg" alt="Foto de perfil de Guilherme Lima, um desenvolvedor apaixonado por viagens." class="profile-pic" />
             <div class="profile-info">
                 <h1>@guilhermelimadev</h1>
                 <p>6 publicações · 952 seguidores · 537 seguindo</p>
@@ -28,40 +29,34 @@
         </section>
 
         <section class="image-grid">
-            <article
-                data-description="Milhares de luzes cintilam na Torre Eiffel, transformando a noite parisiense em um espetáculo mágico.">
+            <article>
                 <figure>
-                    <img src="photos/1.jpeg" alt="Apresentação do projeto" />
+                    <img src="photos/1.jpeg" alt="A Torre Eiffel iluminada à noite, com milhares de luzes cintilando, criando um espetáculo mágico em Paris." />
                 </figure>
             </article>
-            <article
-                data-description="As ruínas de Machu Picchu, com suas construções perfeitas e sua natureza exuberante ao redor.">
+            <article>
                 <figure>
-                    <img src="photos/2.jpeg" alt="Apresentação do projeto" />
+                    <img src="photos/2.jpeg" alt="As ruínas de Machu Picchu, no Peru, com suas construções antigas e perfeitas, e a natureza exuberante ao redor." />
                 </figure>
             </article>
-            <article
-                data-description="Milhares de anos de história estão inscritos nas pedras da Grande Muralha da China.">
+            <article>
                 <figure>
-                    <img src="photos/3.jpeg" alt="Apresentação do projeto" />
+                    <img src="photos/3.jpeg" alt="A Grande Muralha da China, com sua extensão impressionante e sua história milenar, esculpida nas pedras." />
                 </figure>
             </article>
-            <article
-                data-description="Central Park oferece um refúgio verdejante no coração da cidade, um lugar para relaxar e apreciar a natureza.">
+            <article>
                 <figure>
-                    <img src="photos/4.jpeg" alt="Apresentação do projeto" />
+                    <img src="photos/4.jpeg" alt="Central Park, um oásis verdejante no coração de Nova York, com áreas gramadas, lagos e trilhas, oferecendo um refúgio da agitação urbana." />
                 </figure>
             </article>
-            <article
-                data-description="As ruínas do Coliseu, um testemunho do poder do Império Romano, continuam a impressionar e inspirar.">
+            <article>
                 <figure>
-                    <img src="photos/5.jpeg" alt="Apresentação do projeto" />
+                    <img src="photos/5.jpeg" alt="As ruínas do Coliseu Romano, um anfiteatro gigante que testemunha o poder do Império Romano, com sua arquitetura monumental e histórica." />
                 </figure>
             </article>
-            <article
-                data-description="O Cristo Redentor, com seus braços abertos, vigia a cidade maravilhosa e acolhe a todos.">
+            <article>
                 <figure>
-                    <img src="photos/6.jpeg" alt="Apresentação do projeto" />
+                    <img src="photos/6.jpeg" alt="O Cristo Redentor, no Rio de Janeiro, com seus braços abertos, vigia a cidade e acolhe a todos, com sua imponência e significado religioso." />
                 </figure>
             </article>
         </section>
@@ -73,5 +68,4 @@
     </div>
     <script src="modal.js"></script>
 </body>
-
 </html>
