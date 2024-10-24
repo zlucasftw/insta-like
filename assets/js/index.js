@@ -1,4 +1,4 @@
-let { API_URL } = process.env;
+import fetchImages from "./fetchApis";
 
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
@@ -9,28 +9,24 @@ modal.style.display = "none";
 const imageGrid = document.querySelector(".image-grid");
 
 // Função para buscar e exibir os dados do endpoint
-async function fetchAndDisplayImages() {
+async function displayImages() {
+  const data = await fetchImages();
     try {
-        const response = await fetch(process.env.API_URL);  // Usando a URL importada
-        const data = await response.json();
-
-        // Inserindo as imagens e descrições no grid
-        data.forEach(item => {
-            const article = document.createElement("article");
-            article.dataset.description = item.descricao;
-
-            const img = document.createElement("img");
-            img.src = item.imgUrl;
-            img.alt = item.alt;
-
-            article.appendChild(img);
-            imageGrid.appendChild(article);
-        });
+        const postsList = data.map(item => {
+          return `
+            <article data-description="${item.descricao}">
+              <figure>
+                <img src="${item.imgUrl}" alt="${item.alt}" />
+              </figure>
+            </article>
+          `
+        }).join('');
+        imageGrid.insertAdjacentHTML('beforeend', postsList)
 
         // Adicionando eventos de clique para cada imagem carregada
         addImageClickEvents();
     } catch (error) {
-        console.error("Erro ao buscar dados:", error);
+        console.error("Erro ao popular página", error);
     }
 }
 
@@ -65,4 +61,4 @@ window.addEventListener("click", function (event) {
 });
 
 // Chamar a função para buscar e exibir as imagens ao carregar a página
-fetchAndDisplayImages();
+displayImages();
