@@ -1,5 +1,4 @@
-// Importando a URL do arquivo config.js
-import { API_URL } from './api.js'; 
+let { API_URL } = process.env;
 
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
@@ -12,7 +11,7 @@ const imageGrid = document.querySelector(".image-grid");
 // Função para buscar e exibir os dados do endpoint
 async function fetchAndDisplayImages() {
     try {
-        const response = await fetch(API_URL);  // Usando a URL importada
+        const response = await fetch(process.env.API_URL);  // Usando a URL importada
         const data = await response.json();
 
         // Inserindo as imagens e descrições no grid
