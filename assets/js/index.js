@@ -16,7 +16,7 @@ async function displayImages() {
           return `
             <article data-description="${item.descricao}">
               <figure>
-                <img src="${item.imgUrl}" alt="${item.alt}" />
+                <img src="${item.imagem_url}" alt="${item.imagem_alt}" />
               </figure>
             </article>
           `
